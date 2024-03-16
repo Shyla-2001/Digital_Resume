@@ -1,0 +1,343 @@
+/* background gradient color */
+.gradient-background {
+  background: linear-gradient(300deg, rgb(53, 2, 15), #c7b7ba, #ef8989);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Slow Motion for image */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.image-container {
+  animation: slideIn 1.5s ease-out; /* Adjust the duration and easing as needed */
+}
+
+#aboutMe > div > div > div.col-12.col-sm-12.col-lg-6 > img {
+  /* border-radius: 10%; */
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5), 10px -10px 5px rgba(0, 0, 0, 0.5);
+}
+#aboutMe > div > div > div:nth-child(2) > h1 {
+  font-family: "Bree Serif", serif;
+  font-family: "Libre Baskerville", serif;
+}
+#aboutMe > div > div > div:nth-child(2) > p {
+  font-family: "Nunito Sans", sans-serif;
+}
+#aboutMe > div > div > div:nth-child(2) > p span {
+  color: rgb(53, 2, 15);
+  font-weight: 600;
+}
+
+/* Navbar */
+#navbar_c > div > nav > div > a > svg{
+  margin-left: 30px;
+}
+#navbarSupportedContent > ul .nav-item .nav-link {
+  color: rgb(53, 2, 15);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  /* background-color: rgb(243, 234, 236); */
+  padding: 10px; 
+  border-radius: 10px;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+#navbarSupportedContent > ul .nav-item .nav-link:hover{
+  font-size: 18px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+} 
+
+/* projects */
+#projects{
+  margin-top: 75px;
+}
+
+#hanging-icons > div > div {
+  /* border: 2px solid; */
+  padding: 30px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #f3edec;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5), 10px -10px 5px rgba(0, 0, 0, 0.5);
+}
+#hanging-icons > div > div:hover{
+  background-color:  rgb(248, 218, 225);
+  border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 0.9s;
+} 
+
+.title{
+  font-family: "Bree Serif", serif;
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  color: rgb(53, 2, 15) !important;
+  letter-spacing: 3px;
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+}
+#hanging-icons > div > div >div > h4{
+  font-weight: 800;
+  color: rgb(53, 2, 15);
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  /* font-style: italic; */
+}
+#hanging-icons > div > div >div > p{
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  font-style: italic;
+}
+.technologiesUsedText{
+  border-width:0;
+}
+#hanging-icons > div > div >div > a{
+  background-color:  rgb(53, 2, 15);
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding: 15px;
+  font-family: "Nunito Sans", sans-serif;
+}
+#hanging-icons > div > div.col-12.col-sm-12.col-md-12.col-lg-5.d-flex.align-items-start.text-center > div > a{
+  margin-top: 20px;
+}
+#hanging-icons > div > div.col-12.col-sm-12.col-md-12.col-lg-5.d-flex.align-items-start.text-center > div > div > p >button{
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: rgb(53, 2, 15);
+  font-style: italic;
+} 
+.collapse > div{
+  /* background-color:rgb(240, 210, 210); */
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+}
+
+
+.collapse > div >p{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px !important;
+  font-weight: 800;
+}
+.collapse > div >p >span{
+ font-size: 18px;
+ color: rgb(53, 2, 15);
+}
+
+.card {
+  --bs-card-bg: initial;
+  --bs-card-border-color: initial;
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.collapse .card-body p:first-child {
+  animation: slideInLeft 1.5s ease-out; /* Adjust the duration and easing as needed */
+}
+
+.collapse .card-body p:last-child {
+  animation: slideInRight 1.5s ease-out; /* Adjust the duration and easing as needed */
+}
+
+
+/* Education */
+#education{
+  margin-top: 150px;
+   
+}
+.Timeline{
+  position: relative;
+  list-style-type: none;
+}      
+.Timeline::before{
+  content: '';
+  background: black;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 1;
+}      
+.Timeline li{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+ 
+ background: white;
+}
+
+.Timeline li p{
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.Timeline li h4{
+padding: 15px;
+background-color: rgb(53, 2, 15);
+color: white;
+font-size: 15px;
+}     
+.Timeline li h4 span{
+  font-weight: bold;
+  color: #ccc;
+  float: right;
+}
+.Timeline li:before{
+  content: '';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #000 ;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+#education > div > div{
+  margin-top: 40px;
+  font-family: "Nunito Sans", sans-serif;
+}
+#education > div > div > div > ul > li > h4{
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  font-size: 15px
+}
+#education > div > div > div > ul > li > p{
+  font-weight:bold;
+}
+#education > div > div > div > ul > li > p b{
+  color:rgb(53, 2, 15); 
+}
+
+/* Skills */
+#skills {
+margin-top: 100px;
+}
+#skills > div >div > div.col-lg-1 {
+  /* Existing styles */
+  display: grid;
+  place-items: center;
+}
+#skills > div > div > div img {
+  padding: 10px; /* Adjust the value as needed */
+}
+#skills > div > div > div img:hover {
+  transform: scale(1.5); /* Increase size by 20% on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+
+
+/* Certifications */
+#certify{
+  margin-top: 100px;
+}
+#certify > div > div > div > ul > li span{
+  float: right;
+  color: rgb(53, 2, 15);
+}
+#certify > div > div > div > ul > li span a{
+  /* float: right; */
+  color: rgb(53, 2, 15);
+}
+#certify > div > div > div > ul > li{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+   background-color: rgb(242, 230, 230); 
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* letter-spacing: 1px; */
+}
+
+/* contact */
+#contact{
+  background-color: #c66756;
+  padding-top: 20px;
+  margin-top: 75px;
+  
+}
+#contact > div > footer > div > span{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#contact > div > footer > ul > li{
+  padding: 10px;
+}
+#contact > div > footer > ul > li > a > svg{
+color:rgb(53, 2, 15);
+}
+#contact > div > footer > ul > li > a > svg:hover{
+  transform: translateY(-20px);
+  transition: 0.3s;
+  
+}
+#contact > div > footer > div > span > u{
+ color:rgb(53, 2, 15);
+}
+#contact > div > footer > div > span > svg{
+color: rgb(53, 2, 15);;
+}
+
+
+
+
